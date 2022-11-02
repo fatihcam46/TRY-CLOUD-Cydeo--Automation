@@ -9,13 +9,13 @@ import org.junit.runner.RunWith;
         plugin = {
 
                 "html:target/cucumber-reports.html",
-                "rerun:target/rerun.txt",
+                "json:target/cucumber.json",
                 "me.jvt.cucumber.report.PrettyReports:target/cucumber",
         },
-        features = "src/main/resources/features",
+        features = "src/main/java/resources",
         glue="com/tryCloudCydeoAutomation/step_definitions",
         dryRun = false,
-        tags = ""
+        tags = "@wip" //test execution ticket number copy here
 )
 
 public class CukesRunner {
